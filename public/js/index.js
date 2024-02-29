@@ -1,6 +1,3 @@
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
 var map;
 var markers = [];
 var infoWindow;
