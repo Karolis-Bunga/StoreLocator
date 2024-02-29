@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Caif Cafe Locator</title>
+    <script src="/googleMaps/public/js/store-data.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+  </header>
+  <body>
+    <div class="title">Caif Cafe Locator</div>
+
+    <div class="search-container">
+      <div class="search">
+        <input id="zip-code-input" type="text" placeholder="Enter zip" />
+        <i id="icon-search" class="fas fa-search" onclick="searchStores()"></i>
+      </div>
+    </div>
+    <div class="stores-list-container">
+      <div class="stores-list">
+        <div class="store-container">
+          <div class="store-info-container">
+            <div class="store-address">
+              <span>Test</span>
+            </div>
+            <div class="store-phone-number">865987242</div>
+          </div>
+          <div class="store-number-container">
+            <div class="store-number">1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBomrn-Rg5507-W8m0MB4s6VzxRV3lO4hY&callback=initMap"
+    ></script>
+  </body>
+</html>
